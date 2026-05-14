@@ -23,7 +23,6 @@ from twisted.internet import reactor
 from rdpy.protocol.rdp import rdp
 from rdpy.ui.qt6 import RDPClientQt
 
-
 class config_panel(QWidget):
     def __init__(self, wrapper, app):
         super().__init__()

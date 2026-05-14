@@ -125,7 +125,7 @@ class rdp_wrapper:    # based on https://www.youtube.com/watch?v=4Oexj5zf84I
 
             win32com.client.Dispatch("HNetCfg.FwPolicy2").EnableRuleGroup(7, "Remote Desktop", True)
 
-            self.rdp_winst("-i")    # -u to uninstall
+            self.rdp_winst("-i")    # update path already handles -o
 
             with open(self.rdpwrap, "wb") as handle:    # update ini file
                 handle.write(

@@ -1,0 +1,8 @@
+# py -3.10
+rdpyqt
+PyQt6
+Twisted
+qt-reactor
+pywin32
+PyGithub
+pycurl

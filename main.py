@@ -1,5 +1,5 @@
-import sys
 import subprocess
+import sys
 import qreactor
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
@@ -22,6 +22,7 @@ qreactor.install()
 from twisted.internet import reactor
 from rdpy.protocol.rdp import rdp
 from rdpy.ui.qt6 import RDPClientQt
+
 
 class config_panel(QWidget):
     def __init__(self, wrapper, app):
@@ -143,12 +144,12 @@ class config_panel(QWidget):
             self.clear_connection()
             self.wrapper.uninstall()
             if self.confirm_restart():
-                subprocess.Popen(["shutdown", "/r", "/t", "0"], close_fds=True)
+                subprocess.run(["shutdown", "/r", "/t", "0"])
             self.apply_installed_state()
             return
         self.wrapper.install()
         if self.confirm_restart():
-            subprocess.Popen(["shutdown", "/r", "/t", "0"], close_fds=True)
+            subprocess.run(["shutdown", "/r", "/t", "0"])
         else:
             self.try_connect_rdp()
         self.apply_installed_state()

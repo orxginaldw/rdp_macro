@@ -2,7 +2,7 @@
 
 ### rdp_macro
 
-> RDP wrapper based on [SniperThrilla's video](https://www.youtube.com/@SniperThrilla)
+> RDP wrapper based on [SniperThrilla's video](https://www.youtube.com/watch?v=4Oexj5zf84I)
 
 ---
 
